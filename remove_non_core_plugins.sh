@@ -1,0 +1,1 @@
+/Users/angusmcleod/civically/discourse/plugins/civically-scripts/remove_non_core_plugins.sh

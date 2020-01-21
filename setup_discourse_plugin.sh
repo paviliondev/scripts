@@ -1,0 +1,1 @@
+/Users/angusmcleod/civically/discourse/plugins/civically-scripts/setup_discourse_plugin.sh
