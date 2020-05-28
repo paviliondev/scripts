@@ -1,6 +1,6 @@
 Bash scripts for Discourse plugin development
 
-Assumptions:
+#### Assumptions
 
 1. .sh files are in a folder in your PATH (e.g. /usr/local/bin or ~/bin)
 
@@ -12,3 +12,17 @@ Assumptions:
    discourse ## discourse/discourse repository
    plugins ## containing any plugins you're using
    ```
+
+#### Usage
+
+Start Discourse with one or more plugins
+
+```
+discourse_start.sh plugin1 plugin2
+```
+
+Restore a Discourse dump .sql or .tar bundle
+
+```
+discourse_restore.sh /path/to/dump
+```
