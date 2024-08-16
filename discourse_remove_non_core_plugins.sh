@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 declare -a corePlugins=(
+  "automation"
   "chat"
   "discourse-details"
   "discourse-internet-explorer"
