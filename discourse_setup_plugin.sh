@@ -14,8 +14,8 @@ discourse_remove_non_core_plugins.sh
 
 for plugin in "$@"
 do
-  pluginDir=$DISCOURSE_DIR/plugins/$plugin
+  pluginDir=$DISCOURSE_PLUGIN_DIR/$plugin
   if [ -d "$pluginDir" ]; then
-    ln -s $pluginDir $DISCOURSE_DIR/discourse/plugins/$plugin
+    ln -s $pluginDir $DISCOURSE_DIR/plugins/$plugin
   fi
 done

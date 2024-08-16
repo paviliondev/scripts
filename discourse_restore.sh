@@ -6,5 +6,5 @@ if [ $# -eq 0 ]; then
   exit 1
 fi
 
-cd $DISCOURSE_DIR/discourse
+cd $DISCOURSE_DIR
 rake -g db:restore\[$@\]

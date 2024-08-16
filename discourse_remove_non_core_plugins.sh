@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 declare -a corePlugins=(
+  "chat"
   "discourse-details"
   "discourse-internet-explorer"
   "discourse-local-dates"
@@ -9,9 +10,14 @@ declare -a corePlugins=(
   "discourse-unsupported-browser"
   "lazy-yt"
   "poll"
+  "styleguide"
+  "checklist"
+  "discourse-lazy-videos"
+  "footnote"
+  "spoiler-alert"
 )
 
-for d in $DISCOURSE_DIR/discourse/plugins/*/; do
+for d in $DISCOURSE_DIR/plugins/*/; do
   name="$(basename $d)"
 
   if [[ ! "${corePlugins[@]}" =~ "${name}" ]]; then
